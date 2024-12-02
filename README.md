@@ -35,7 +35,7 @@ I have used an **Ubuntu EC2 instance** for setting up SonarQube. The steps are a
 3. **Accessing the SonarQube Server**:  
    SonarQube was accessible via the IP address of the EC2 instance:  
    `http://<EC2-IP>:9000`  
-   [image1]: images/image1.png 
+  ![Description](images/image1.png) 
 4. **Token Generation**:  
    * After accessing the SonarQube UI, I logged in as an admin.  
    * I went to **My Account \> Security** and generated a new token for Jenkins integration.  
