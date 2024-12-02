@@ -39,7 +39,7 @@ I have used an **Ubuntu EC2 instance** for setting up SonarQube. The steps are a
 4. **Token Generation**:  
    * After accessing the SonarQube UI, I logged in as an admin.  
    * I went to **My Account \> Security** and generated a new token for Jenkins integration.  
-     [image2]: images/image2.png
+    ![Description](images/image2.png) 
      
 
 ### **3\. Configuring Jenkins Based on Plugin Requirements**
@@ -64,18 +64,18 @@ I have used an **Ubuntu EC2 instance** for setting up SonarQube. The steps are a
 * **SonarQube Configuration:**  
   * **Go to Manage Jenkins \> Configure System.**
 
-[image3]: images/image3.png
+![Description](images/image3.png) 
 
 * **Maven Configuration:**  
   * **Go to Manage Jenkins \> Global Tool Configuration.**  
   * **Under Maven, configure the Maven version.**
 
-[image4]: images/image4.png
+![Description](images/image4.png) 
 
 * **JDK Configuration:**  
   * **Under JDK, configure the JDK installation by specifying the JDK version.**
 
-[image5]: images/image5.png
+![Description](images/image5.png)
 
 * **Email Notification Configuration:**  
   * **Go to Manage Jenkins \> Configure System.**  
@@ -88,20 +88,20 @@ I have used an **Ubuntu EC2 instance** for setting up SonarQube. The steps are a
    * **Under Manage Jenkins \> Configure System, add SonarQube credentials (token) and configure the server URL for integration with Jenkins.**  
    * **Under SonarQube Scanner, configure the SonarQube installation and ensure the sonar-scanner is set correctly.**
 
-[image6]: images/image6.png
+![Description](images/image6.png)
 
 2. **Maven and JDK Setup:**  
    * **Under Global Tool Configuration, set up Maven and JDK installations that Jenkins will use to build the project.**  
 3. **SMTP Server Configuration:**  
    * **Under E-mail Notification, configure the SMTP server to send email notifications after the build completes.**
 
-[image7]: images/image7.png
+![Description](images/image7.png) 
 
 ### **6\. Creation of Jenkins Pipeline**
 
 #### **Step 1: Save the Jenkinsfile in repository**
 
-[image8]: images/image8.png
+![Description](images/image8.png)
 
 #### **Step 2: Set up a Jenkins Pipeline job**
 
@@ -120,24 +120,24 @@ I have used an **Ubuntu EC2 instance** for setting up SonarQube. The steps are a
   * #### **Script Path: Jenkinsfile**
 
 Jenkins Dashboard  
-[image9]: images/image9.png 
+![Description](images/image9.png) 
 Pipeline Dashboard  
-[image10]: images/image10.png 
+![Description](images/image10.png)
 Pipeline View  
-[image11]: images/image11.png
+![Description](images/image11.png)
 
 Console Output  
-[image12]: images/image12.png
+![Description](images/image12.png)
 
 Sonarqube Scanning Results  
-[image13]: images/image13.png
+![Description](images/image13.png) 
 
 Code Coverage  
-[image14]: images/image14.png  
-[image15]: images/image15.png
+![Description](images/image14.png)  
+![Description](images/image15.png) 
 
 Email Sent  
-[image16]: images/image16.png
+![Description](images/image16.png) 
 
 #### 
 
